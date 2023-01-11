@@ -4,3 +4,7 @@
   margin-right: 5%;
   margin-top: 1%;
 }
+.header-div{
+  display: flex;
+  /* justify-content: space-between; */
+}

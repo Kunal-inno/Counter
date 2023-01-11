@@ -1,18 +1,22 @@
-import React, { useState, useEffect } from 'react';
+import React from "react";
 
 const Timer = () => {
-  const [time, setTime] = useState(new Date());
+  // const [counter, setCounter] = useState(0);
 
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      setTime(new Date());
-    }, 1000);
 
-    return () => {
-      clearInterval(intervalId);
-    };
-  }, []);
-  return <div>The current time is: {time.getSeconds()}</div>;
+  // useEffect(() => {
+    // const id = setInterval(() => setCounter((oldCount) => oldCount + 1), 1000);
+
+    // return () => {
+      // clearInterval(id);
+    // };
+  // }, []);
+
+  return (
+    <div>
+      {/* <p>Your con {counter} </p> */}
+    </div>
+  );
 };
 
 export default Timer;

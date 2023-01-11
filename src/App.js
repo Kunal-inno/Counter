@@ -1,21 +1,20 @@
-import React from 'react'
-import CounterDisplay from './CounterDisplay'
-import HeadrePlus from './HeadrePlus'
-import "./App.css"
-import Timer from './Timer'
+import React from "react";
+import "./App.css";
+import Timer from "./Timer";
+import BtnAddCard from "./BtnAddCard";
+// import AddNum from "./AddNum";
 
 const App = () => {
-
-
   return (
     <div>
+      <div>
+        <BtnAddCard />
+        {/* <AddNum /> */}
+      </div>
 
-      <HeadrePlus/>
-      
-      <CounterDisplay />
-      <Timer/>
+      <Timer />
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;

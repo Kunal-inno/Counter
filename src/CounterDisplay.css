@@ -1,0 +1,19 @@
+.card-parent{
+    /* background-color: rgb(200, 120, 120); */
+    width: 20%;
+}
+.start-stop{
+    background-color: whitesmoke;
+    text-align: center;
+    height: 6vh;
+    font-weight: 600;
+    padding-top: 6%;
+}
+.sec{
+    background-color: whitesmoke;
+    height: 10vh;
+    text-align: center;
+    padding-top: 25%;
+    font-weight: 600;
+    
+}

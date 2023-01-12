@@ -2,9 +2,10 @@ import React, { useState } from "react";
 import CounterDisplay from "./CounterDisplay";
 import "./BtnAddCard.css";
 
-const BtnAddCard = () => {
+const BtnAddCard = ({getData}) => {
   const [count, setCount] = useState(0);
-
+  
+  
   return (
     <div>
       <div>
@@ -12,7 +13,7 @@ const BtnAddCard = () => {
           Add Component
         </button>
         {[...Array(count)].map((_, i) => (
-          <CounterDisplay key={i} />
+          <CounterDisplay key={i} getData={getData}  />
         ))}
       </div>
     </div>

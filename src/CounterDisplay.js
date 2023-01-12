@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from "react";
 import "./CounterDisplay.css";
 
-const CounterDisplay = () => {
+const CounterDisplay = ({getData}) => {
   const [counter, setCounter] = useState(0);
   const [isRunning, setIsRunning] = useState(false);
-
+  
+  getData(counter)
+  
   useEffect(() => {
     let id;
     if (isRunning) {
@@ -24,6 +26,7 @@ const CounterDisplay = () => {
       <div className="card-parent">
         <p className="start-stop" onClick={handleStartStop}>Click to Start/Stop</p>
         <p className="sec">{counter}</p>
+        
       </div>
     </div>
   );
@@ -31,3 +34,11 @@ const CounterDisplay = () => {
 
 
 export default CounterDisplay;
+  // console.log(counter)
+
+// counter.forEach(myFunction);
+
+// function myFunction(item) {
+//   var sum=0
+//   sum += item;
+// }

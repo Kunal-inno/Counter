@@ -8,6 +8,8 @@
     height: 6vh;
     font-weight: 600;
     padding-top: 6%;
+    cursor: pointer;
+    color: brown;
 }
 .sec{
     background-color: whitesmoke;

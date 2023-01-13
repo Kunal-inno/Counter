@@ -2,9 +2,10 @@ import React, { useState } from "react";
 import CounterDisplay from "./CounterDisplay";
 import "./BtnAddCard.css";
 
-const BtnAddCard = ({getData}) => {
+const BtnAddCard = ({getData,card }) => {
   const [count, setCount] = useState(0);
   
+  card(count)
   
   return (
     <div>
